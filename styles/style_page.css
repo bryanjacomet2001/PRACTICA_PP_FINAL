@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{ font-size: 10px; }
+
+/*  VARIABLES GLOBALES */
+:root{
+    --bg_color_blue: #1e6292;
+    --bg_second_color_blue: rgb(34, 140, 216);
+    --bg-color-green: #28B463 ;
+    --bg_gray_color: #eaedee;
+    --font_color_white: #fff;
+    --font_color_black_opacity: #444444;
+
+}
+
+body{ 
+    font-family: 'Lato', sans-serif; 
+    background-color: var(--bg_gray_color);
+}
+
+.section{
+    max-width: 100%;
+    padding: 2rem 3rem;
+}
+
+.msg_info{
+    padding: 4rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*ESTILOS CABECERA*/
+
+.header_nav{
+    background-color: var(--bg_color_blue);
+    color: var(--font_color_white);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ESTILOS CUERPO */
+.consulta_text .consulta_text_title{
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    color: var(--font_color_black_opacity);
+}
+
+.consulta_text p{
+    font-size: 2rem;
+    padding: 5rem 0;
+}
+
+/* ESTILOS FORMULARIO */
+
+form input{ display: block; }
+
+.container_imputs{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.container_imputs label{
+    font-size: 1.5rem;
+    padding-right: 2rem;
+}
+
+.container_imputs .txt_id{
+    padding: 1rem;
+}
+
+.container_imputs .txt_id::placeholder{
+    font-size: 1.5rem;
+}
+
+.container_imputs .select_filter{
+    padding: 1rem;
+}
+
+form .btn_form{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--bg_color_blue);
+    color: var(--font_color_white);
+    font-weight: bold;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+form .btn_form:hover{
+    background-color: var(--bg_second_color_blue);
+}
+
+/* Estilos Seccion de generar certificado */
+.container_consulta_certificates{
+    padding: 3rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    display: block;
+    max-width: 100%;
+}
+
+table thead{
+    background-color: var(--bg_color_blue);
+    color: #fff;
+}
+
+table thead th{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+table tbody tr td{
+    padding: 1rem .5rem;
+}
+
+table tbody tr .title,
+table tbody tr .id{
+    font-size: 2rem;
+}
+
+table tbody tr .id{
+   text-align: center;
+}
+
+table tbody tr .status{
+    text-align: center;
+    color: var(--font_color_white);
+}
+
+table tbody tr .status > span{
+    display: block;
+    padding: .5rem;
+    font-size: 1.3rem;
+
+}
+.container_consulta_certificates .btn_certificates{
+    max-width: max-content;
+    background-color: var(--font_color_white);
+    color: var(--bg_color_blue);
+    text-decoration: none;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 2rem ;
+    border: thin solid var(--bg_color_blue);
+}

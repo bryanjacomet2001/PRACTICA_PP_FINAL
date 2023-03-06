@@ -1,0 +1,45 @@
+/*ESTILOS PARA EL PDF QUE SE VA A GEENRAR EN /HANDLER/CERTIFICADO.TPL.PHP*/
+html{
+    font-size: 10px;
+}
+/*ESTILOS DEL LOGO */
+.logo{
+    text-align: center
+}
+
+.logo_img{
+    display: inline; 
+    width: 100px; 
+    height: 100px;
+}
+
+/*ESTILOS DEL MAIN*/
+main{
+    padding: 0 2rem;
+}
+
+.post_title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.date_paragraph{
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.container_authors h2{
+    font-size: 2rem;
+}
+
+.container_authors p {
+    font-size: 1.5rem;
+}
+
+.container_authors h4 {
+    font-size: 1.5rem;
+}
+
+.body_paragraph{
+    font-size: 1.7rem;
+}
