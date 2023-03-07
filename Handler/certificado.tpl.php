@@ -31,5 +31,10 @@
     <?php } ?>
     </section>
     </main> 
+    <footer>
+    <section class="publishers_signatures">     
+        <img src="http://localhost/PP2/assets/img/firma<?php echo $journal?>.jpg" alt="firma_<?php echo $journal?>">
+      </section>
+    </footer>
   </body>
 </html>

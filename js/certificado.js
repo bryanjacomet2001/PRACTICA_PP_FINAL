@@ -15,7 +15,7 @@ const getConsulta = async ()=>{
 
         if(!res.ok) throw {status: res.status, statusText: res.statusText};
 
-        // console.log(json);
+        console.log(json);
 
         if(json.length !== 0) {
             $msg.classList.add("hidden");
@@ -34,7 +34,7 @@ const getConsulta = async ()=>{
                 //     $template.querySelector(".status > span").textContent = "RECHAZADO";
                 //     $template.querySelector(".status > span").style.backgroundColor = "#E74C3C";
                 // }   
-                $template.querySelector(".btn .btn_certificates").href=`http://localhost/PP2/pages/certificado.inc.php?idSub=${el.SUBMISSION_ID}`;
+                $template.querySelector(".btn .btn_certificates").href=`http://localhost/PP2/pages/certificado.inc.php?idSub=${el.SUBMISSION_ID}&journal=${el.JOURNAL}`;
                 let $clone = d.importNode($template, true);
                 $fragment.appendChild($clone);
             });

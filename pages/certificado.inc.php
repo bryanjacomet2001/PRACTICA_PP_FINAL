@@ -1,7 +1,10 @@
 <?php
 
-// OBTENGO EL SUBMISSION ID DEL ARTICULO
-if($_GET) $_id= $_GET["idSub"];
+// OBTENGO EL SUBMISSION ID DEL ARTICULO y EL JOURNAL_ID
+if($_GET){
+  $_id= $_GET["idSub"];
+  $journal = $_GET["journal"];
+} 
 
 // LLAMO LA LIBRERIA DONPDF Y LA CLASE QUE TIENE LOS PROCEDIMIENTOS ALMACENADOS
 require_once "../libs/dompdf/autoload.inc.php";
