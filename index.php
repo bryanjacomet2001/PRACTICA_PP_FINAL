@@ -65,5 +65,4 @@
   </main>
   <script src="http://localhost/PP2/js/certificado.js"></script>
 </body>
-
 </html>
