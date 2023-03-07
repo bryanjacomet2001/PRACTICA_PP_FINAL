@@ -15,25 +15,15 @@ const getConsulta = async ()=>{
 
         if(!res.ok) throw {status: res.status, statusText: res.statusText};
 
-        console.log(json);
+        // console.log(json);
 
         if(json.length !== 0) {
             $msg.classList.add("hidden");
             json.forEach(el => {
                 $template.querySelector(".id").textContent = el.SUBMISSION_ID;
                 $template.querySelector(".title").textContent = el.TITLE;
-                // if(el.STATE === 1){
-                //     $template.querySelector(".status > span").textContent = "REVISIÓN";
-                //     $template.querySelector(".status > span").style.backgroundColor = "#F1C40F";
-                // }
-                if(el.STATE === 3){
-                    $template.querySelector(".status > span").textContent = "PUBLICADO";
-                    $template.querySelector(".status > span").style.backgroundColor = "#28B463";
-                }
-                // if(el.STATE === 4){
-                //     $template.querySelector(".status > span").textContent = "RECHAZADO";
-                //     $template.querySelector(".status > span").style.backgroundColor = "#E74C3C";
-                // }   
+                $template.querySelector(".status > span").textContent = "PUBLICADO";
+                $template.querySelector(".status > span").style.backgroundColor = "#28B463"; 
                 $template.querySelector(".btn .btn_certificates").href=`http://localhost/PP2/pages/certificado.inc.php?idSub=${el.SUBMISSION_ID}&journal=${el.JOURNAL}`;
                 let $clone = d.importNode($template, true);
                 $fragment.appendChild($clone);
