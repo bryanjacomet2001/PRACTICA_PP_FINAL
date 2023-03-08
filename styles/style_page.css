@@ -78,6 +78,7 @@ form input{ display: block; }
 
 .container_imputs .txt_id{
     padding: 1rem;
+    width: 60%;
 }
 
 .container_imputs .txt_id::placeholder{

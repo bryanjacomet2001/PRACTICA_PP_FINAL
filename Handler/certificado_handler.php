@@ -5,7 +5,7 @@
     CERTIFICADO.JS Y LLENA LA TABLA */
 
     if($_POST["filtro"] === "titulo"){
-        $data = $_POST["campo"];
+        $data = trim($_POST["campo"]);
         $certificado = new certificadoDAO();
         $resData = $certificado->getDataFilterTitle($data);
         echo json_encode($resData);
@@ -15,7 +15,7 @@
     CERTIFICADO.JS Y LLENA LA TABLA */
 
     if($_POST["filtro"] === "username"){
-        $data = $_POST["campo"];
+        $data = trim($_POST["campo"]);
         $certificado = new certificadoDAO();
         $resData = $certificado->getDataFilterUserName($data);
         echo json_encode($resData);
