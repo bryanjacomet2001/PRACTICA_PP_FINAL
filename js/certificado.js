@@ -15,7 +15,7 @@ const getConsulta = async ()=>{
 
         if(!res.ok) throw {status: res.status, statusText: res.statusText};
 
-        // console.log(json);
+        console.log(json);
 
         if(json.length !== 0) {
             $msg.classList.add("hidden");
