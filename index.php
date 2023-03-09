@@ -14,7 +14,7 @@
 <body>
   <!-- CABECERA -->
   <header class="header_nav section">
-    <h1>Investigación, Tecnología e Innovación</h1>
+    <h1>Evaluación de artículos</h1>
   </header>
   <main>
     <section class="container_consulta section">
