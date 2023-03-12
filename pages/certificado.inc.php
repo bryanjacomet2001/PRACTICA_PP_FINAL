@@ -48,8 +48,8 @@ try {
   $dompdf = new Dompdf(["isRemoteEnabled" => true]); 
   $dompdf->load_html($html); 
   $dompdf->render(); 
-  $dompdf->add_info("Title", "Certificado"); 
-  $dompdf->stream("Certificado.pdf", ["Attachment" => 0]); 
+  $dompdf->add_info("Title", "Certificado de Aceptación"); 
+  $dompdf->stream("Certificado de Aceptación.pdf", ["Attachment" => 0]); 
 
 } catch (\Throwable $th) {
     echo "Ocurrio un error".$th;

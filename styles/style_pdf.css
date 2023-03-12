@@ -32,11 +32,12 @@ main{
 
 /*ESTILOS DEL MAIN*/
 .container_main{
-    width: 70%;
+    width: 80%;
     position: absolute;
     left: 50%; 
     top: 50%; 
     transform: translate(-50%, -50%);
+    padding: 2rem 0;
 }
 
 .magazine_title{
@@ -64,8 +65,7 @@ main{
     font-size: 1.7rem;
 }
 
-.container_authors .author_name,
-.container_authors .author_affilation{
+.container_authors .author_name{
     padding-left: 4rem;
 }
 
@@ -73,23 +73,28 @@ main{
     padding-bottom: 1rem;
 }
 
-.container_authors .author_name{
+.container_authors .author_name,
+.container_authors .author_second_name{
     font-size: 1.6rem;
-    margin-bottom: .5rem;
 }
 
 .container_authors .author_affilation{
     font-size: 1.6rem;
-    margin-bottom: 1rem;
+    display: inline-block;
+    line-height: 0;
+}
+
+.container_author{
+    padding-bottom: 1.5rem ;
 }
 
 .body_paragraph{
-    padding: 1.5rem 0;
+    padding-top: .5rem;
 }
 
-.body_paragraph  p,
+.body_paragraph p,
 .post_title{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 2.3rem;
 }
 
@@ -99,7 +104,8 @@ main{
 
 /*ESTILOS PARA LAS FIRMAS*/
 .publishers_signatures{
-   text-align: center;
+    padding-top: 1rem;
+    text-align: left;
 }
 
 /*Estilos de las firmas*/
