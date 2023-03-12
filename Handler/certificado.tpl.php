@@ -1,41 +1,50 @@
- <!-- HTML QUE SE VA A RENDERIZAR PARA FORMAR EL PDF -->
+<!DOCTYPE html>
+<!-- HTML QUE SE VA A RENDERIZAR PARA FORMAR EL PDF -->
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="http://localhost/PP2/styles/style_pdf.css">
+    <link rel="stylesheet" href="http://localhost/PP2/styles/style_pdf.css?v=<?php echo time(); ?>">
   </head>
   <body>
-    <div class="logo">
-      <img class="logo_img" src="http://localhost/PP2/assets/img/UGlogo.png" alt="logo"/>
-    </div>
+    <img class="bg_pdf" src="http://localhost/PP2/assets/img/bg_pdf.jpg" alt="background">
     <main>
-    <!-- TITULO DEL ARTÍCULO  -->
-    <h2 class="post_title"><?php echo $res_title["TITLE"] ?></h2>
-    <!-- FECHA DE PUBLICAIÓN -->
-    <p class="date_paragraph"> Guayaquil, <?php echo $res_date["DIA"] ?> <?php echo $res_date["MES"] ?> <?php echo $res_date["ANIO"] ?></p>
-    <!-- SECCIÓN DE AUTORES Y SU UNIVERSIDAD -->
-    <section class="container_authors">
-      <h2>Autores</h2>
-      <?php
-      for ($i= 0; $i  < count($array_data_tmp); $i++) {  ?>
-            <p> <?php echo $array_data_tmp[$i][0]["SETTING_VALUE"]; ?> <span> <?php echo $array_data_tmp[$i][1]["SETTING_VALUE"]; ?> </span></p>
-            <h4> <?php echo $array_data_tmp[$i][2]["SETTING_VALUE"]; ?> </h4>
-        <?php }?>
-    </section>
-    <section class="body_paragraph">
-    <?php foreach($res_vol_num as $data){ ?>
-      <p>Ha sido aceptado como artículo de investigación para su publicación en nuestra revista Investigación,
-          Tecnología e Innovación, con ISSN: 1390-5147 / e-ISSN: 2661-6548, en el vol. <?php echo $data["VOLUME"] ?>
-          N. <?php echo $data["NUMBER"] ?> correspondiente a <?php echo $res_date["MES"] ?> <?php echo $res_date["ANIO"] ?>.
-        </p>
-    <?php } ?>
-    </section>
+      <div class="container_main">
+        <!-- TITULO DE LA REVISTA -->
+        <h1 class="magazine_title"><?php echo $titleRevista ?></h1>
+        <h3 class="magaziane_ISSN">ISSN <?php echo $ISSN ?>/ E-ISSN <?php echo $e_ISSN ?></h3>
+        <!-- FECHA DE PUBLICAIÓN -->
+        <p class="date_paragraph"> Guayaquil, <?php echo $res_date["DIA"] ?> <?php echo $res_date["MES"] ?> <?php echo $res_date["ANIO"] ?></p>
+        <!-- SECCIÓN DE AUTORES Y SU UNIVERSIDAD -->
+        <section class="container_authors">
+          <p class="title_authors">Autores:<p>
+            <div class="authors">
+            <?php
+              for ($i= 0; $i  < count($array_data_tmp); $i++) {  ?>
+            <div class="container_author">
+              <p class="author_name"> <?php echo $array_data_tmp[$i][0]["SETTING_VALUE"]; ?> <span> <?php echo $array_data_tmp[$i][1]["SETTING_VALUE"]; ?> </span></p>
+              <h4 class= "author_affilation"> <?php echo $array_data_tmp[$i][2]["SETTING_VALUE"]; ?> </h4>
+              </div>
+              <?php }?>
+              </div>
+        </section>
+        <section class="body_paragraph">
+        <?php foreach($res_vol_num as $data){ ?>
+          <p>Es un placer informarles, que después de la revisión de pares a doble ciegas su artículo
+            titulado:
+          </p><br>
+          <!-- TITULO DEL ARTÍCULO  -->
+          <h3 class="post_title"><?php echo $res_title["TITLE"] ?></h3> <br>
+          <p>Ha sido aceptado como artículo de investigación para su publicación en nuestra revista <?php echo $titleRevista ?>,
+              con ISSN <?php echo $ISSN ?> / e-ISSN <?php echo $e_ISSN?>, en el vol. <?php echo $data["VOLUME"] ?>
+              N. <?php echo $data["NUMBER"] ?> correspondiente a <?php echo $res_date["MES"] ?> <?php echo $res_date["ANIO"] ?>.
+          </p>
+        <?php } ?>
+        </section>
+        <section class="publishers_signatures">     
+          <!-- AQUI LA FIRMA SE AGREGA DE FORMA DINAMICA SEGUN EL ID_JOURNAL -->
+          <img src="http://localhost/PP2/assets/img/firma<?php echo $journal?>.jpg" alt="firma_<?php echo $journal?>">
+        </section>
+      </div>
     </main> 
-    <footer>
-    <section class="publishers_signatures">     
-      <!-- AQUI LA FIRMA SE AGREGA DE FORMA DINAMICA SEGUN EL ID_JOURNAL -->
-        <img src="http://localhost/PP2/assets/img/firma<?php echo $journal?>.jpg" alt="firma_<?php echo $journal?>">
-      </section>
-    </footer>
   </body>
 </html>

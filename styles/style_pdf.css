@@ -1,69 +1,111 @@
 /*ESTILOS PARA EL PDF QUE SE VA A GEENRAR EN /HANDLER/CERTIFICADO.TPL.PHP*/
 html{
     font-size: 10px;
-}
-/*ESTILOS DEL LOGO */
-.logo{
-    text-align: center
+    box-sizing: border-box;
 }
 
-.logo_img{
-    display: inline; 
-    width: 100px; 
-    height: 100px;
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    position: relative;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 60;
 }
 
 /*ESTILOS DEL MAIN*/
-main{
-    padding: 0 2rem;
+.container_main{
+    width: 70%;
+    position: absolute;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
 }
 
-.post_title{
-    font-size: 2rem;
+.magazine_title{
     text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.magaziane_ISSN{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .date_paragraph{
     text-align: right;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
 }
 
-.container_authors h2{
-    font-size: 2rem;
-    line-height: 0;
-}
-
-.container_authors p {
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
-}
-
-.container_authors h4 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.body_paragraph{
+.container_authors .title_authors,
+.container_authors .author_name{
     font-size: 1.7rem;
 }
 
-/*ESTILOS PARA LAS FIRMAS*/
-footer{
-    margin-top: 2rem;
+.container_authors .author_name,
+.container_authors .author_affilation{
+    padding-left: 4rem;
 }
 
+.container_authors .title_authors{
+    padding-bottom: 1rem;
+}
+
+.container_authors .author_name{
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+
+.container_authors .author_affilation{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.body_paragraph{
+    padding: 1.5rem 0;
+}
+
+.body_paragraph  p,
+.post_title{
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+}
+
+.post_title{
+    text-align: center;
+}
+
+/*ESTILOS PARA LAS FIRMAS*/
 .publishers_signatures{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
+   text-align: center;
 }
 
 /*Estilos de las firmas*/
 .publishers_signatures img{
+    display: inline;
     width: auto;
     height: auto;
-    width: 250px;
-
+    width: 150px;
 }

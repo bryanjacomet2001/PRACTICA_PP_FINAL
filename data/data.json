@@ -1,0 +1,116 @@
+[
+    {
+        "idJournal": 1,
+        "nombreRevista": "Investigación, Tecnología e Innovación",
+        "nombreEditor":"",
+        "ISSN": "1390-5147",
+        "e-ISSN": "2661-6548"
+    },
+
+    {
+        "idJournal": 2,
+        "nombreRevista": "Ciencias Naturales y Ambientales",
+        "nombreEditor":"",
+        "ISSN": "2773-7772",
+        "e-ISSN": ""
+    },
+
+    {
+        "idJournal": 3,
+        "nombreRevista": "Especialidades Odontológicas UG",
+        "nombreEditor":"",
+        "ISSN": "2600-576X",
+        "e-ISSN": ""
+    },
+
+    {
+        "idJournal": 4,
+        "nombreRevista": "Universidad de Guayaquil",
+        "nombreEditor":"",
+        "ISSN": "2477-913X",
+        "e-ISSN": "2806-5751"
+    },
+
+    {
+        "idJournal": 5,
+        "nombreRevista": "ciencias médicas",
+        "nombreEditor":"",
+        "ISSN": " ",
+        "e-ISSN": "2661-6726"
+    },
+
+    {
+        "idJournal": 6,
+        "nombreRevista": "Ingeniería Química y Desarrollo",
+        "nombreEditor":"",
+        "ISSN": "1390-9428",
+        "e-ISSN": ""
+    },
+
+    {
+        "idJournal": 7,
+        "nombreRevista": "Ciencias Económicas",
+        "nombreEditor":"",
+        "ISSN": "1390-7492",
+        "e-ISSN": "2806-5980"
+    },
+
+    {
+        "idJournal": 8,
+        "nombreRevista": "Artes: Arquitectura, Tecnología y Sostenibilidad",
+        "nombreEditor": "",
+        "ISSN": "2953-6499",
+        "e-ISSN": ""
+    },
+
+
+    {
+        "idJournal": 9,
+        "nombreRevista": "Ingeniería y Ciencias Aplicadas en la Industria",
+        "nombreEditor":"",
+        "ISSN": "",
+        "e-ISSN": "2953-6634"
+    },
+
+    {
+        "idJournal": 10,
+        "nombreRevista": "Minerva",
+        "nombreEditor":"",
+        "ISSN": "",
+        "e-ISSN": "2953-6316"
+    },
+
+
+    {
+        "idJournal": 11,
+        "nombreRevista": "Jurídica, Ciencias Sociales y Políticas",
+        "nombreEditor":"",
+        "ISSN": "",
+        "e-ISSN": "2953-6464"
+    },
+
+
+    {
+        "idJournal": 12,
+        "nombreRevista": "Ecológica Agropecuaria",
+        "nombreEditor":"",
+        "ISSN": "2953-6596",
+        "e-ISSN": ""
+    },
+
+    {
+        "idJournal": 13,
+        "nombreRevista": "Internacional de actividad física",
+        "nombreEditor":"",
+        "ISSN": "2953-6693",
+        "e-ISSN": ""
+    },
+
+    {
+        "idJournal": 14,
+        "nombreRevista": "Scripta Mundi",
+        "nombreEditor":"",
+        "ISSN": "0000-0000",
+        "e-ISSN": "0000-0000"
+    }
+]
