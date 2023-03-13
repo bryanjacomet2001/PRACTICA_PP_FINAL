@@ -1,62 +1,70 @@
 [
     {
         "idJournal": 1,
+        "TtituloRevista": "Revista Científica Investigación, Tecnología e Innovación",
         "nombreRevista": "Investigación, Tecnología e Innovación",
-        "nombreEditor":"",
+        "nombreEditor": "",
         "ISSN": "1390-5147",
         "e-ISSN": "2661-6548"
     },
 
     {
         "idJournal": 2,
+        "TtituloRevista": "Revista Científica de Ciencias Naturales y Ambientales",
         "nombreRevista": "Ciencias Naturales y Ambientales",
-        "nombreEditor":"",
+        "nombreEditor": "Carmita Bonifaz",
         "ISSN": "2773-7772",
         "e-ISSN": ""
     },
 
     {
         "idJournal": 3,
+        "TtituloRevista": "Revista Científica Especialidades Odontológicas UG",
         "nombreRevista": "Especialidades Odontológicas UG",
-        "nombreEditor":"",
+        "nombreEditor": "William Ubilla Mazzini",
         "ISSN": "2600-576X",
         "e-ISSN": ""
     },
 
     {
         "idJournal": 4,
+        "TtituloRevista": "Revista Universidad de Guayaquil",
         "nombreRevista": "Universidad de Guayaquil",
-        "nombreEditor":"",
+        "nombreEditor": "",
         "ISSN": "2477-913X",
         "e-ISSN": "2806-5751"
     },
 
     {
         "idJournal": 5,
+        "TtituloRevista": "Revista Científica Ciencias Médicas",
         "nombreRevista": "ciencias médicas",
-        "nombreEditor":"",
-        "ISSN": " ",
+        "nombreEditor": "Fernando Patricio Moncayo Asnalema",
+        "ISSN": "",
         "e-ISSN": "2661-6726"
     },
 
     {
         "idJournal": 6,
+        "TtituloRevista": "Revista Científica Ingeniería Química y Desarrollo",
         "nombreRevista": "Ingeniería Química y Desarrollo",
-        "nombreEditor":"",
+        "nombreEditor": "Francisco Javier Duque Aldaz",
         "ISSN": "1390-9428",
         "e-ISSN": ""
     },
 
     {
         "idJournal": 7,
+        "TtituloRevista": "Revista de la Facultad de Ciencias Económicas",
         "nombreRevista": "Ciencias Económicas",
-        "nombreEditor":"",
+        "nombreEditor": "Diana Morán C",
         "ISSN": "1390-7492",
         "e-ISSN": "2806-5980"
     },
 
     {
         "idJournal": 8,
+        "TtituloRevista": "Revista de Artes: Arquitectura, Tecnología y Sostenibilidad",
         "nombreRevista": "Artes: Arquitectura, Tecnología y Sostenibilidad",
         "nombreEditor": "",
         "ISSN": "2953-6499",
@@ -66,16 +74,18 @@
 
     {
         "idJournal": 9,
+        "TtituloRevista": "Revista de Ingeniería y Ciencias Aplicadas en la Industria",
         "nombreRevista": "Ingeniería y Ciencias Aplicadas en la Industria",
-        "nombreEditor":"",
+        "nombreEditor": "Yomar Alexander Gonzalez Cañizalez",
         "ISSN": "",
         "e-ISSN": "2953-6634"
     },
 
     {
         "idJournal": 10,
+        "TtituloRevista": "Revista Minerva",
         "nombreRevista": "Minerva",
-        "nombreEditor":"",
+        "nombreEditor": "Alina Rodriguez Morales",
         "ISSN": "",
         "e-ISSN": "2953-6316"
     },
@@ -83,8 +93,9 @@
 
     {
         "idJournal": 11,
+        "TtituloRevista": "Revista Jurídica, Ciencias Sociales y Políticas",
         "nombreRevista": "Jurídica, Ciencias Sociales y Políticas",
-        "nombreEditor":"",
+        "nombreEditor": "Ernesto Francisco Salcedo Oretga",
         "ISSN": "",
         "e-ISSN": "2953-6464"
     },
@@ -92,22 +103,25 @@
 
     {
         "idJournal": 12,
+        "TtituloRevista": "Revista Científica Ecológica Agropecuaria",
         "nombreRevista": "Ecológica Agropecuaria",
-        "nombreEditor":"",
+        "nombreEditor": "Walter Francisco Quezada Moreno",
         "ISSN": "2953-6596",
         "e-ISSN": ""
     },
 
     {
         "idJournal": 13,
+        "TtituloRevista": "Revista Internacional de actividad física",
         "nombreRevista": "Internacional de actividad física",
-        "nombreEditor":"",
+        "nombreEditor": "Manuel Gutiérrez Cruz",
         "ISSN": "2953-6693",
         "e-ISSN": ""
     },
 
     {
         "idJournal": 14,
+        "TtituloRevista": "Revista Científica Scripta Mundi",
         "nombreRevista": "Scripta Mundi",
         "nombreEditor":"",
         "ISSN": "0000-0000",

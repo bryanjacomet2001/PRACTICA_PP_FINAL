@@ -59,7 +59,7 @@
             $stmt = $this->con->prepare($sql);
             $stmt->execute();
         
-            $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $resultados = $stmt->fetch(PDO::FETCH_ASSOC);
 
             return $resultados;
         }

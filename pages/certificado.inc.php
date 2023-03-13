@@ -1,4 +1,7 @@
 <?php
+// LLAMO LA LIBRERIA DONPDF Y LA CLASE QUE TIENE LOS PROCEDIMIENTOS ALMACENADOS
+require_once '../libs/dompdf/autoload.inc.php';
+require_once  '../Handler/Certificado_data_handler.php';
 
 // OBTENGO EL SUBMISSION ID DEL ARTICULO y EL JOURNAL_ID
 if($_GET){
@@ -6,38 +9,31 @@ if($_GET){
   $journal = $_GET["journal"];
 } 
 
-// LLAMO LA LIBRERIA DONPDF Y LA CLASE QUE TIENE LOS PROCEDIMIENTOS ALMACENADOS
-require_once '../libs/dompdf/autoload.inc.php';
-require_once '../model/certificadoDAO.php';
-require_once  '../Handler/certificado_data_handler.php';
-
 use Dompdf\Dompdf;
 use Dompdf\Options;
 
 try {
-  // INSTANCIO UNA CLASE PARA USAR LOS METODOS QUE SE CONECTAN CON LA BD
-  $certificado = new certificadoDAO();
-  $dataHandler = new DataHandler();
+  // INSTANCIO UNA CLASE PARA USAR LOS METODOS QUE ME DEVUELVEN LOS DATOS DE LOS ARTICULOS PARA FORMAR EL CERTIFICADO
+  $dataHandler = new CertificadoDataHandler();
 
   //COMIENZO A OBTENER EN MEMORIA EL HTML Y LOS DATOS QUE SE ENVIARAN
   ob_start();
   /*OBTENGO LOS DATOS DEL ARTÍCULO */
-  $res_title = $certificado->getTitle($id);
-  $res_date = $certificado->getDatePublication($id);
-
-  $res_id = $certificado->getIdAuthors($id);
-  $array_data_tmp = array();
-  $res_vol_num = $certificado->getVol_num($id);
-
-  foreach ($res_id as $i){
-    $res_data_author = $certificado->getDataAuthors($i["AUTHOR_ID"]);
-    array_push($array_data_tmp, $res_data_author);
-  }
-
-  $titleRevista = $dataHandler->getTitleRevista($journal);
+  $titleRevista = $dataHandler->getMagazineTitle($journal);
+  $nombreRevista = $dataHandler->getMagazineName($journal);
+  $nombreEditor = $dataHandler->getEditorName($journal);
   $ISSN = $dataHandler->getISSN($journal);
   $e_ISSN = $dataHandler->getE_ISSN($journal);
+  $titleArticle = $dataHandler->getArticleTitle($id);
+  $datePublication = $dataHandler->getDatePublication($id);
+  $volNum = $dataHandler->getVolNum($id);
+  $idAutors = $dataHandler->getIdAuthors($id);
+  $arrayDataTmp = array();
 
+  foreach ($idAutors as $i) {
+    $dataAuthor = $dataHandler->getDataAuthors($i["AUTHOR_ID"]);
+    array_push($arrayDataTmp, $dataAuthor);
+  }
 
   /*ENVIO LOS DATOS AL ARCHIVO HTML/PHP QUE SE VA A RENDERIZAR */
   include "../Handler/certificado.tpl.php";

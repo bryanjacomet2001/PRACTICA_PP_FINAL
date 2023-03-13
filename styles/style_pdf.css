@@ -47,7 +47,7 @@ main{
     font-size: 1.8rem;
 }
 
-.magaziane_ISSN{
+.magazine_ISSN{
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 1.5rem;
@@ -60,12 +60,11 @@ main{
     padding: 1rem;
 }
 
-.container_authors .title_authors,
-.container_authors .author_name{
+.container_authors .title_authors{
     font-size: 1.7rem;
 }
 
-.container_authors .author_name{
+.container_authors .authors{
     padding-left: 4rem;
 }
 
@@ -74,28 +73,32 @@ main{
 }
 
 .container_authors .author_name,
-.container_authors .author_second_name{
+.container_authors .author_second_name,
+.container_authors .author_affilation{
     font-size: 1.6rem;
 }
 
 .container_authors .author_affilation{
-    font-size: 1.6rem;
-    display: inline-block;
-    line-height: 0;
+    display: inline;
 }
 
 .container_author{
-    padding-bottom: 1.5rem ;
+    padding-bottom: .5rem;
 }
 
 .body_paragraph{
     padding-top: .5rem;
 }
 
-.body_paragraph p,
+.body_paragraph > p,
 .post_title{
     font-size: 1.6rem;
     line-height: 2.3rem;
+
+}
+
+.body_paragraph p {
+    text-align: justify;
 }
 
 .post_title{
@@ -104,7 +107,7 @@ main{
 
 /*ESTILOS PARA LAS FIRMAS*/
 .publishers_signatures{
-    padding-top: 1rem;
+    padding: 1rem 0;
     text-align: left;
 }
 
@@ -114,4 +117,9 @@ main{
     width: auto;
     height: auto;
     width: 150px;
+}
+
+.publisher_name,
+.cita_editor{
+    font-size: 1.3rem;
 }
