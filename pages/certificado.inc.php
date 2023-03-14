@@ -26,6 +26,7 @@ try {
   $e_ISSN = $dataHandler->getE_ISSN($journal);
   $titleArticle = $dataHandler->getArticleTitle($id);
   $datePublication = $dataHandler->getDatePublication($id);
+  $dateNow = $dataHandler->getDateNow();
   $volNum = $dataHandler->getVolNum($id);
   $idAutors = $dataHandler->getIdAuthors($id);
   $arrayDataTmp = array();

@@ -13,8 +13,8 @@
         <h1 class="magazine_title"><?php echo $titleRevista ?></h1>
         <h3 class="magazine_ISSN">ISSN <?php echo $ISSN ?>/ E-ISSN <?php echo $e_ISSN ?></h3>
         <!-- FECHA DE PUBLICAIÓN -->
-        <p class="date_paragraph"> Guayaquil, <?php echo $datePublication["DIA"] ?> <?php echo $datePublication["MES"] ?> 
-          <?php echo $datePublication["ANIO"] ?>
+        <p class="date_paragraph"> Guayaquil, <?php echo $dateNow["DIA"] ?> <?php echo $dateNow["MES"] ?> 
+          <?php echo $dateNow["ANIO"] ?>
         </p>
         <!-- SECCIÓN DE AUTORES Y SU UNIVERSIDAD -->
         <section class="container_authors">
@@ -37,8 +37,8 @@
           <h3 class="post_title"><?php echo ucwords(mb_strtolower($titleArticle))?></h3><br>
           <p>Ha sido aceptado como artículo de investigación para su publicación en nuestra revista <b><?php echo $nombreRevista ?></b>,
             con ISSN <?php echo $ISSN ?> / e-ISSN <?php echo $e_ISSN?>, en el vol. <?php echo $volNum["VOLUME"] ?>
-            N. <?php echo $volNum["NUMBER"] ?> correspondiente a <?php echo $datePublication["MES"] ?> 
-            <?php echo $datePublication["ANIO"] ?>.
+            N. <?php echo $volNum["NUMBER"] ?> correspondiente al <?php echo $datePublication["DIA"] ?> de 
+            <?php echo $datePublication["MES"] ?> del <?php echo $datePublication["ANIO"] ?>.
           </p><br>
         <p>Cordialmente,</p>
         </section>

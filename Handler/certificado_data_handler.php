@@ -92,6 +92,12 @@
             return $date;
         }
 
+        /*Metodo que devuelve la fecha actual*/
+        public function getDateNow(){
+            $dateNow = $this->certificadoDAO->getDateNow();
+            return $dateNow;
+        }
+
          /*Metodo que devuelve el numero y volumen del articulo*/
         public function getVolNum($id_submission){
             $volNum = $this->certificadoDAO->getVol_num($id_submission);

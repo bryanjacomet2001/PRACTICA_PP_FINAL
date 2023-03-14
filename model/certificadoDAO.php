@@ -30,6 +30,17 @@
             return $resultados;
         }
 
+        /* METODO PARA OBTENER LA FECHA ACTUAL */  
+        public function getDateNow(){
+            $sql = "CALL SP_CERTIFICATE_GENERATION_DATE";
+            $stmt = $this->con->prepare($sql);
+            $stmt->execute();
+        
+            $resultados = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            return $resultados;
+        }
+
         /* METODO PARA OBTENER LOS ID DE LOS AUTORES */
         public function getIdAuthors($id_submission){
             $sql = "CALL SP_GET_AUTHORS('$id_submission')";
