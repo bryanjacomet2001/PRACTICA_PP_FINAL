@@ -51,21 +51,7 @@
             }
             return $editorRevista;
         }
-
-        /*Metodo que devuelve el ISSN de la revista*/
-        public function getISSN($idJournal){
-            $datos = json_decode($this->json_data, true);
-            $ISSN = "";
-            
-            foreach($datos as $data){
-                if($data['idJournal'] === (int)$idJournal){
-                    $ISSN = $data["ISSN"];
-                    break;
-                }
-            }
-            return $ISSN;
-        }
-
+        
         /*Metodo que devuelve el E-ISSN de la revista*/
         public function getE_ISSN($idJournal){
             $datos = json_decode($this->json_data, true);

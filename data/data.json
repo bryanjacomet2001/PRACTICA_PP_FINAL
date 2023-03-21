@@ -4,7 +4,6 @@
         "TtituloRevista": "Revista Científica Investigación, Tecnología e Innovación",
         "nombreRevista": "Investigación, Tecnología e Innovación",
         "nombreEditor": "",
-        "ISSN": "1390-5147",
         "e-ISSN": "2661-6548"
     },
 
@@ -13,8 +12,7 @@
         "TtituloRevista": "Revista Científica de Ciencias Naturales y Ambientales",
         "nombreRevista": "Ciencias Naturales y Ambientales",
         "nombreEditor": "Carmita Bonifaz",
-        "ISSN": "2773-7772",
-        "e-ISSN": ""
+        "e-ISSN": "2773-7772"
     },
 
     {
@@ -22,16 +20,13 @@
         "TtituloRevista": "Revista Científica Especialidades Odontológicas UG",
         "nombreRevista": "Especialidades Odontológicas UG",
         "nombreEditor": "William Ubilla Mazzini",
-        "ISSN": "2600-576X",
-        "e-ISSN": ""
+        "e-ISSN": "2600-576X"
     },
 
     {
         "idJournal": 4,
         "TtituloRevista": "Revista Universidad de Guayaquil",
         "nombreRevista": "Universidad de Guayaquil",
-        "nombreEditor": "",
-        "ISSN": "2477-913X",
         "e-ISSN": "2806-5751"
     },
 
@@ -40,7 +35,6 @@
         "TtituloRevista": "Revista Científica Ciencias Médicas",
         "nombreRevista": "ciencias médicas",
         "nombreEditor": "Fernando Patricio Moncayo Asnalema",
-        "ISSN": "",
         "e-ISSN": "2661-6726"
     },
 
@@ -49,8 +43,7 @@
         "TtituloRevista": "Revista Científica Ingeniería Química y Desarrollo",
         "nombreRevista": "Ingeniería Química y Desarrollo",
         "nombreEditor": "Francisco Javier Duque Aldaz",
-        "ISSN": "1390-9428",
-        "e-ISSN": ""
+        "e-ISSN": "1390-9428"
     },
 
     {
@@ -58,7 +51,6 @@
         "TtituloRevista": "Revista de la Facultad de Ciencias Económicas",
         "nombreRevista": "Ciencias Económicas",
         "nombreEditor": "Diana Morán C",
-        "ISSN": "1390-7492",
         "e-ISSN": "2806-5980"
     },
 
@@ -67,17 +59,14 @@
         "TtituloRevista": "Revista de Artes: Arquitectura, Tecnología y Sostenibilidad",
         "nombreRevista": "Artes: Arquitectura, Tecnología y Sostenibilidad",
         "nombreEditor": "",
-        "ISSN": "2953-6499",
-        "e-ISSN": ""
+        "e-ISSN": "2953-6499"
     },
-
 
     {
         "idJournal": 9,
         "TtituloRevista": "Revista de Ingeniería y Ciencias Aplicadas en la Industria",
         "nombreRevista": "Ingeniería y Ciencias Aplicadas en la Industria",
         "nombreEditor": "Yomar Alexander Gonzalez Cañizalez",
-        "ISSN": "",
         "e-ISSN": "2953-6634"
     },
 
@@ -86,28 +75,23 @@
         "TtituloRevista": "Revista Minerva",
         "nombreRevista": "Minerva",
         "nombreEditor": "Alina Rodriguez Morales",
-        "ISSN": "",
         "e-ISSN": "2953-6316"
     },
-
 
     {
         "idJournal": 11,
         "TtituloRevista": "Revista Jurídica, Ciencias Sociales y Políticas",
         "nombreRevista": "Jurídica, Ciencias Sociales y Políticas",
         "nombreEditor": "Ernesto Francisco Salcedo Oretga",
-        "ISSN": "",
         "e-ISSN": "2953-6464"
     },
-
 
     {
         "idJournal": 12,
         "TtituloRevista": "Revista Científica Ecológica Agropecuaria",
         "nombreRevista": "Ecológica Agropecuaria",
         "nombreEditor": "Walter Francisco Quezada Moreno",
-        "ISSN": "2953-6596",
-        "e-ISSN": ""
+        "e-ISSN": "2953-6596"
     },
 
     {
@@ -115,8 +99,7 @@
         "TtituloRevista": "Revista Internacional de actividad física",
         "nombreRevista": "Internacional de actividad física",
         "nombreEditor": "Manuel Gutiérrez Cruz",
-        "ISSN": "2953-6693",
-        "e-ISSN": ""
+        "e-ISSN": "2953-6693"
     },
 
     {
@@ -124,7 +107,6 @@
         "TtituloRevista": "Revista Científica Scripta Mundi",
         "nombreRevista": "Scripta Mundi",
         "nombreEditor":"",
-        "ISSN": "0000-0000",
-        "e-ISSN": "0000-0000"
+        "e-ISSN": "2960-8031"
     }
 ]

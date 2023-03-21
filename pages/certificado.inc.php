@@ -22,7 +22,6 @@ try {
   $titleRevista = $dataHandler->getMagazineTitle($journal);
   $nombreRevista = $dataHandler->getMagazineName($journal);
   $nombreEditor = $dataHandler->getEditorName($journal);
-  $ISSN = $dataHandler->getISSN($journal);
   $e_ISSN = $dataHandler->getE_ISSN($journal);
   $titleArticle = $dataHandler->getArticleTitle($id);
   $datePublication = $dataHandler->getDatePublication($id);
