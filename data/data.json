@@ -27,6 +27,7 @@
         "idJournal": 4,
         "TtituloRevista": "Revista Universidad de Guayaquil",
         "nombreRevista": "Universidad de Guayaquil",
+        "nombreEditor": "Christian Bermúdez Gallegos",
         "e-ISSN": "2806-5751"
     },
 
@@ -106,7 +107,7 @@
         "idJournal": 14,
         "TtituloRevista": "Revista Científica Scripta Mundi",
         "nombreRevista": "Scripta Mundi",
-        "nombreEditor":"",
+        "nombreEditor":" Bladimir Jaramillo Escobar",
         "e-ISSN": "2960-8031"
     }
 ]
